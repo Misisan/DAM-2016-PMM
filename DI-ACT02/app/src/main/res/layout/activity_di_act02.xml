@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_di_act02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.migue.di_act02.DI_ACT02">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:weightSum="2"
+        android:id="@+id/layout_sup">
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:id="@+id/btn_fondo"
+            android:textOff="@string/btn_fondo_off"
+            android:textOn="@string/btn_fondo_on"
+            android:background="#ccc"/>
+
+        <ToggleButton
+            android:text="ToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:id="@+id/btn_letras"
+            android:textOff="@string/btn_lletra_off"
+            android:textOn="@string/btn_lletra_on"
+            android:background="#ccc"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingTop="30px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingBottom="50px"
+        android:id="@+id/layout_ctr">
+
+        <CheckBox
+            android:text="@string/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/checkMostrar" />
+
+        <TextView
+            android:text="@string/txt_oculto_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtOculto"
+            android:layout_weight="2"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingTop="30px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:paddingBottom="50px"
+        android:id="@+id/layout_ctr2">
+
+        <TextView
+            android:text="@string/btn_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtClickLargo" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:padding="50px"
+        android:id="@+id/layout_inf"
+        android:weightSum="1">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_marginTop="50px"
+            android:id="@+id/rating" />
+
+        <TextView
+            android:text="@string/rat00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtRating"/>
+    </LinearLayout>
+</LinearLayout>

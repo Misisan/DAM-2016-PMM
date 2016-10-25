@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DI-ACT02</string>
+    <string name="btn_fondo_on">FONDO BLANCO</string>
+    <string name="btn_fondo_off">FONDO ROJO</string>
+    <string name="btn_lletra_on">LETRAS ROJAS</string>
+    <string name="btn_lletra_off">LETRAS NEGRAS</string>
+    <string name="txt_oculto_on">Este es un mensaje oculto</string>
+    <string name="txt_oculto_off"></string>
+    <string name="btn_check">Mostrar</string>
+    <string name="btn_press">Haz aquí un click largo</string>
+    <string name="rat00">[0/5]</string>
+</resources>
