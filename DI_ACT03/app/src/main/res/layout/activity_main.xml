@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.migue.di_act03.MainActivity"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#afafb9"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:paddingTop="0dp">
+
+
+            <TextView
+                android:text="Album 01"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#f00"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album01" />
+
+            <TextView
+                android:text="Album 02"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#ff0"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album02"
+                android:layout_below="@+id/album01"/>
+
+            <TextView
+                android:text="Album 03"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#e6e6e6"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album03"
+                android:layout_below="@+id/album02" />
+            <TextView
+                android:text="Album 04"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#f00"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album04"
+                android:layout_below="@+id/album03" />
+
+            <TextView
+                android:text="Album 05"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#ff0"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album05"
+                android:layout_below="@+id/album04"/>
+
+            <TextView
+                android:text="Album 06"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="#e6e6e6"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/album06"
+                android:layout_below="@+id/album05" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="#cf1316"
+            android:layout_marginLeft="5dp"
+            android:padding="2.5dp"
+            android:columnCount="2">
+
+
+            <TextView
+                android:text="Foto 01"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto01" />
+            <TextView
+                android:text="Foto 02"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto02"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 03"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto03" />
+            <TextView
+                android:text="Foto 04"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto04" />
+            <TextView
+                android:text="Foto 05"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto05"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 06"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto06" />
+            <TextView
+                android:text="Foto 07"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto07" />
+            <TextView
+                android:text="Foto 08"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto08"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 09"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto09" />
+            <TextView
+                android:text="Foto 10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto10" />
+            <TextView
+                android:text="Foto 11"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto11"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 12"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto12" />
+            <TextView
+                android:text="Foto 13"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto13" />
+            <TextView
+                android:text="Foto 14"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto14"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 15"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto15" />
+            <TextView
+                android:text="Foto 16"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto16" />
+            <TextView
+                android:text="Foto 17"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto17"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 18"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto18" />
+            <TextView
+                android:text="Foto 19"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto19" />
+            <TextView
+                android:text="Foto 20"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto20"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 21"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto21" />
+            <TextView
+                android:text="Foto 22"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto22" />
+            <TextView
+                android:text="Foto 23"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto23"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 24"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto24" />
+            <TextView
+                android:text="Foto 25"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto25" />
+            <TextView
+                android:text="Foto 26"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto26"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 27"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto27" />
+            <TextView
+                android:text="Foto 28"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto28" />
+            <TextView
+                android:text="Foto 29"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto29"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 30"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto30" />
+            <TextView
+                android:text="Foto 31"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto31" />
+            <TextView
+                android:text="Foto 32"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto32"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 33"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto33" />
+            <TextView
+                android:text="Foto 34"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto34" />
+            <TextView
+                android:text="Foto 35"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:id="@+id/Foto35"
+                android:layout_gravity="fill_horizontal" />
+            <TextView
+                android:text="Foto 36"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#ff0"
+                android:layout_margin="2.5dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill_horizontal"
+                android:id="@+id/Foto36" />
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
