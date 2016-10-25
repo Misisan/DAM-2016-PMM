@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DI_ACT04</string>
+    <string name="menu_opc01">Opción 01</string>
+    <string name="menu_opc02">Opción 02</string>
+    <string name="menu_opc03">Un submenú</string>
+    <string name="menu_opc04">Opción 04</string>
+    <string name="menu_opc05">Fondo de rojo</string>
+    <string name="menu_opc06">Opción 06</string>
+    <string name="submenu_opc01">SubOpción 01</string>
+    <string name="submenu_opc02">SubOpción 02</string>
+    <string name="submenu_opc03">SubOpción 03</string>
+    <string name="submenu_opc04">SubOpción 04</string>
+    <string name="sms">Miguel Ángel Simeón</string>
+    <string name="msj01">Has seleccionado la 1a opción</string>
+    <string name="msj02">Has seleccionado la 2a opción, ya deberías saberlo</string>
+    <string name="msj04">¿En serio vas a probarlas todas?</string>
+    <string name="msj05">Has cambiado el fondo a rojo</string>
+    <string name="msj06">Por el amor de un cerdo preñado, déjalo ya por favor</string>
+    <string name="msj03_01">Oliver, Beji, los magos del balón</string>
+    <string name="msj03_02">Benji, Oliver, sueños de campeón</string>
+    <string name="msj03_03">Oliver, Benji, el fútbol es su pasión</string>
+    <string name="msj03_04">Hay que marcar otro gol!!!</string>
+
+</resources>

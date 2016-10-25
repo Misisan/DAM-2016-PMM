@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+    android:id="@+id/menu_item01"
+    android:title="@string/menu_opc01"/>
+
+    <item
+    android:id="@+id/menu_item02"
+    android:title="@string/menu_opc02"/>
+
+    <item
+    android:id="@+id/menu_item03"
+    android:title="@string/menu_opc03">
+        <menu>
+            <item
+                android:id="@+id/submenu_item01"
+                android:title="@string/submenu_opc01"/>
+            <item
+                android:id="@+id/submenu_item02"
+                android:title="@string/submenu_opc02"/>
+            <item
+                android:id="@+id/submenu_item03"
+                android:title="@string/submenu_opc03"/>
+            <item
+                android:id="@+id/submenu_item04"
+                android:title="@string/submenu_opc04"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_item04"
+        android:title="@string/menu_opc04"/>
+    <item
+        android:id="@+id/menu_item05"
+        android:title="@string/menu_opc05"/>
+    <item
+        android:id="@+id/menu_item06"
+        android:icon="@mipmap/ic_launcher"
+        android:checkable="false"
+        android:title="@string/menu_opc06" />
+
+</menu>
