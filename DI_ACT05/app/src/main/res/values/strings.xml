@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DI_ACT05</string>
+    <string name="item_menuC_01">Mostrar</string>
+    <string name="item_menuC_02">Eliminar</string>
+    <string name="item_menuP_01">Mostrar desde el popup</string>
+    <string name="item_menuP_02">Eliminar desde el popup</string>
+</resources>
