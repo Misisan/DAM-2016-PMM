@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="masimeon.aad03b.dam.florida.com.aad_act03b.Main2Activity"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecNombre"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecDNI"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecNac"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRecSex"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:layout_weight="1"/>
+</LinearLayout>

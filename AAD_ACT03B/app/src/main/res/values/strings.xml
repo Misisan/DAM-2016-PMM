@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AAD_ACT03B</string>
+    <string name="capNombre">Nombre:</string>
+    <string name="hintNombre">Nombre</string>
+    <string name="capDNI">DNI:</string>
+    <string name="hintDNI">DNI</string>
+    <string name="capNac">Fecha nac.:</string>
+    <string name="hintNac">00/00/0000</string>
+    <string name="capSex">Sexo:</string>
+    <string name="hintSex">Hombre/Mujer</string>
+    <string name="capButton">Guardar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
