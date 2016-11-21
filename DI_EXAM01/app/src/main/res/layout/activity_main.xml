@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="masimeon.diexam1.florida.di_exam01.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:background="#a2affd"
+        android:id="@+id/fondo">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:text="TEXTO" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#a2affd"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:text="Fondo Negro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_fondoB"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="Fondo Verde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_fondoG"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="Fondo Rojo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_fondoR"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#a2affd"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:text="Texto Blanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_textW"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Texto Amarillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_textY"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="Texto Azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR_textB"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#a2affd"
+        android:layout_marginTop="5dp">
+
+        <CheckBox
+            android:text="Mostrar texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:checked="true" />
+
+    </LinearLayout>
+</LinearLayout>
