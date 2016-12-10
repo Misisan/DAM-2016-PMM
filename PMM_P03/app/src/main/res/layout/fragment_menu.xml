@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="masimeon.pmm03.florida.pmm_p03.FragmentMenu"
+    android:layout_weight="7"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:id="@+id/LayoutTitulo"
+        android:background="@color/fondoMathDice">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/btn_mathdice"
+            android:id="@+id/imgTitulo" />
+    </FrameLayout>
+
+    <ListView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondoMathDice"
+        android:layout_weight="1"
+        android:id="@+id/LayoutCuerpo" />
+
+</LinearLayout>
