@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PMM Proyecto 04 M.A. Simeón</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="msg_bienvenida">Bienvenido jugador!</string>
+</resources>
