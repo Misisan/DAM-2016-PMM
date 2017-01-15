@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-ene-2017 18:09:06 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="inicio.Empresa" table="empresas">
+        <id name="cif" type="java.lang.String" access="field">
+            <column name="cif" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="java.lang.String">
+            <column name="nombre" />
+        </property>
+        <property name="empleados" type="java.lang.Integer">
+            <column name="empleados" />
+        </property>
+        <property name="direccion" type="java.lang.String">
+            <column name="direccion" />
+        </property>
+    </class>
+</hibernate-mapping>
