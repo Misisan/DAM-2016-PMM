@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements FragmentMenu.List
                 break;
             case 3:
                 Jugador j = db.obtenerJugadorActivo();
-                Toast.makeText(this, String.valueOf(j.getEdad()), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Sal tu solo, que ya eres mayorcito ;)", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 bienvenida();
