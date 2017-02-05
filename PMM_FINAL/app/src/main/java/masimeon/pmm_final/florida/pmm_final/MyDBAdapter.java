@@ -86,8 +86,6 @@ public class MyDBAdapter {
 
         ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
         Jugador jugador = new Jugador();
-        jugador.setNombre("Anónimo");
-        jugador.setNick("Anónimo");
 
         //Montamos la query para la consulta
         //No le ponemos condición pq con la variables ACTIVA para de mi como de la mierda
@@ -165,6 +163,11 @@ public class MyDBAdapter {
 
     public void borrarJugador(int id){
         String lsql = "DELETE FROM "+DATABASE_TABLE_JUGADOR+" WHERE "+ID+" = "+id+";";
+        db.rawQuery(lsql, null).moveToNext();
+    }
+
+    public void limpiarJugador(){
+        String lsql = "DELETE FROM "+DATABASE_TABLE_JUGADOR+" WHERE "+NOMBRE+" = NULL;";
         db.rawQuery(lsql, null).moveToNext();
     }
 

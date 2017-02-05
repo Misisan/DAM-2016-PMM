@@ -15,9 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
-
 
 public class AdapterJugadores extends ArrayAdapter {
 
@@ -98,6 +96,7 @@ public class AdapterJugadores extends ArrayAdapter {
             txtP.setTextColor(Color.BLACK);
         }
 
+
         todo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -118,9 +117,15 @@ public class AdapterJugadores extends ArrayAdapter {
 
                             case R.id.item_selecc:
                                 click.start();
+                                db.limpiarJugador();
                                 db.seleccionarJugador(arraylist.get(posicion).getId());
                                 Jugador rescatado = db.obtenerJugadorActivo();
                                 Toast.makeText(getContext(), "Jugador "+rescatado.getNick()+" ("+rescatado.getNombre()+") seleccionado", Toast.LENGTH_SHORT).show();
+                                activity.recreate();
+                                return true;
+                            case R.id.item_refresh:
+                                click.start();
+                                db.limpiarJugador();
                                 activity.recreate();
                                 return true;
                             default:

@@ -30,12 +30,20 @@ public class MainActivity extends AppCompatActivity implements FragmentMenu.List
         getSupportActionBar().hide();
 
         //Cargamos la canción de fondo************************************************************************/
-        sonido = MediaPlayer.create(this, R.raw.fondo);
         sonido_clickMenu = MediaPlayer.create(this,R.raw.click);
         sonido_clickMenu.setVolume(10,10);
-        sonido.start();
+
+        sonido = MediaPlayer.create(this, R.raw.fondo);
         sonido.setVolume(3,3);
         sonido.setLooping(true);
+        sonido.setOnPreparedListener(new MediaPlayer.OnPreparedListener(){
+                                          @Override
+                                          public void onPrepared (MediaPlayer mp){
+                                              Log.d("AUDIO", "Cargada la cancion");
+                                          }
+                                      }
+        );
+        sonido.start();
         /***************************************************************************************************/
         //Creamos al objeto jugador por defecto
         j = new Jugador("Desconocido", "Desconocido");
@@ -67,8 +75,8 @@ public class MainActivity extends AppCompatActivity implements FragmentMenu.List
                 lista();
                 break;
             case 3:
-                Jugador j = db.obtenerJugadorActivo();
-                Toast.makeText(this, "Sal tu solo, que ya eres mayorcito ;)", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Adiós!", Toast.LENGTH_SHORT).show();
+                finish();
                 break;
             default:
                 bienvenida();
@@ -168,7 +176,20 @@ public class MainActivity extends AppCompatActivity implements FragmentMenu.List
     @Override
     protected void onResume() {
         super.onResume();
-        sonido.start();
-        sonido.setLooping(true);
+            sonido.release();
+            sonido=null;
+            sonido = MediaPlayer.create(this, R.raw.fondo);
+            sonido.start();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (sonido != null) {
+            sonido.release();
+            sonido = null;
+        }
+
+    }
+
 }

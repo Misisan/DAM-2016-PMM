@@ -9,4 +9,8 @@
         android:id="@+id/item_del"
         android:title="Elimina este jugador"/>
 
+    <item
+        android:id="@+id/item_refresh"
+        android:title="Refresca lista"/>
+
 </menu>
