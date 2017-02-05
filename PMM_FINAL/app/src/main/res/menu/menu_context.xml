@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_selecc"
+        android:title="Selecciona este jugador"/>
+
+    <item
+        android:id="@+id/item_del"
+        android:title="Elimina este jugador"/>
+
+</menu>

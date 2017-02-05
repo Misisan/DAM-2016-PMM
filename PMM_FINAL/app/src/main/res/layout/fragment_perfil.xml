@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="masimeon.pmm_final.florida.pmm_final.FragmentPerfil"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="2"
+    android:background="@color/fondoMathDice"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:text="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perfil_nombre"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/txt_tit"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:id="@+id/perfil_txtNombre"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/txt_tit"/>
+
+        <TextView
+            android:text="Apodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/perfil_nick"
+            android:layout_weight="1"
+            android:textColor="@color/txt_tit"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:id="@+id/perfil_txtNick"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/txt_tit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/cam"
+            android:layout_weight="0.8"
+            android:background="@color/fondoMathDice"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/stat_sys_download"
+            android:id="@+id/perfil_btnadd"
+            android:layout_weight="0.2"
+            android:background="@color/fondoMathDice"/>
+    </LinearLayout>
+
+</LinearLayout>
